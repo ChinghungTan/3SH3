@@ -16,8 +16,8 @@ int main() {
     cout << "=============Please Select=============" << endl;
 
     FIFO *fifo = new FIFO();
-    LRU *lru = new LRU();
-    OPT *opt = new OPT();
+    //LRU *lru = new LRU();
+    //OPT *opt = new OPT();
     cin >> select;
     switch (select) {
         case 1:
@@ -27,19 +27,19 @@ int main() {
             fifo->running();
             break;
 
-        case 2:
-            cout << "-----LRU-----" << endl;
+        // case 2:
+        //     cout << "-----LRU-----" << endl;
 
-            lru->init();
-            lru->running();
-            break;
+        //     lru->init();
+        //     lru->running();
+        //     break;
 
-        case 3:
-            cout << "-----OPT-----" << endl;
+        // case 3:
+        //     cout << "-----OPT-----" << endl;
 
-            opt->init();
-            opt->running();
-            break;
+        //     opt->init();
+        //     opt->running();
+        //     break;
 
         default:
             cout <<"Error!" << endl;
