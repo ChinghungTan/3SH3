@@ -44,7 +44,7 @@ void OPT(int list[], int block[],int size_list,int size_block){
 	for(int a=0;a<size_block;a++){
 			storage[a][0]=block[a];
 			storage[a][1]=0;
-		}
+	}
 	
 	int i,j,k,z;
 	int index_max = 0;
@@ -144,10 +144,10 @@ int main(){
 	int block_size = sizeof(frame)/sizeof(frame[1]);
 	// fifo(pages,frame,list_size,block_size);
 	// printf("\n");
-	OPT(pages,frame,list_size,block_size);
-	printf("\n");
-	// LRU(pages,frame,list_size,block_size);
+	// OPT(pages,frame,list_size,block_size);
 	// printf("\n");
+	LRU(pages,frame,list_size,block_size);
+	printf("\n");
 
 	
 	return 0;
