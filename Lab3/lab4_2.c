@@ -145,9 +145,9 @@ int main(){
 	// fifo(pages,frame,list_size,block_size);
 	// printf("\n");
 	// OPT(pages,frame,list_size,block_size);
-	// printf("\n");
+
 	LRU(pages,frame,list_size,block_size);
-	printf("\n");
+	// printf("\n");
 
 	
 	return 0;
